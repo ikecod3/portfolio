@@ -6,12 +6,12 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex flex-col items-center justify-center mx-auto h-[100vh]"
+      className="flex flex-col items-center justify-center mx-auto h-[100vh] mt-16 sm:mt-0"
     >
       <p className="text-center text-3xl border-blue-400 border-b-2 tracking-widest">
         About
       </p>
-      <div className="flex flex-col sm:flex-row items-center justify-around ">
+      <div className="flex flex-col sm:flex-row items-center justify-around h-full">
         {/* education */}
         <div className="flex flex-col items-center justify-center px-8 sm:px-0">
           <h1 className="p-8 font-bold text-4xl">Education</h1>

@@ -9,7 +9,7 @@ const Banner = () => {
     <>
       <div
         id="banner"
-        className="grid place-items-center grid-cols-3 sm:flex flex-wrap items-center justify-center gap-10 max-w-screen-2xl mx-auto h-[50vh] sm:h-[20vh]"
+        className="grid place-items-center grid-cols-3 sm:flex flex-wrap items-center justify-center gap-10 max-w-screen-2xl mx-auto h-[50vh] sm:h-[20vh] my-20 sm:my-0"
       >
         {techData.map((item) => (
           <Tooltip key={Math.random()} title={item.name}>

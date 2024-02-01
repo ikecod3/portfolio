@@ -26,13 +26,13 @@ const Work = () => {
         <p className="text-center text-3xl tracking-widest">
           Previous Projects
         </p>
-        <div className="flex flex-wrap gap-8 justify-center  h-full">
+        <div className="flex flex-wrap gap-8 justify-center p-4  h-full">
           {prevProject.map((item) => (
             <div
               key={Math.random()}
-              className="flex flex-col justify-between max-w-[30rem] hover:shadow-2xl px-4 rounded-xl w-full border-2"
+              className="flex flex-col justify-between max-w-[30rem] hover:shadow-2xl px-4 rounded-xl w-full border-2 sm:border-2 border-inherit "
             >
-              <h1 className="text-center text-2xl font-extrabold p-3">
+              <h1 className="text-center text-lg sm:text-2xl font-extrabold p-3">
                 {item.name}
               </h1>
               <Image
