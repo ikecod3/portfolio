@@ -13,7 +13,15 @@ const Nav = ({ isDarkMode, toggleDarkMode }) => {
         className="w-full py-3.5 sticky top-0 left-0 right-0 bg-inherit text-inherit z-30"
       >
         <div className="flex items-center justify-around">
-          <h1 className="text-4xl font-bold text-center">{`OKOYE`}</h1>
+          <Link
+            to="header"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer"
+          >
+            <h1 className="text-4xl font-bold text-center">{`OKOYE`}</h1>
+          </Link>
+
           <div className="flex items-center justify-center gap-8">
             <div className="sm:flex items-center hidden justify-center text-lg gap-8 sm:gap-12">
               <Link

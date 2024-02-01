@@ -9,7 +9,7 @@ const Work = () => {
   const [ref, inView] = useInView();
 
   const variants = {
-    hidden: { opacity: 0, y: 100, scale: 0.8 },
+    hidden: { opacity: 0, y: 20, scale: 0.8 },
     visible: { opacity: 1, y: 0, scale: 1 },
   };
 
@@ -20,7 +20,7 @@ const Work = () => {
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={variants}
-      transition={{ duration: 0.5, ease: "easeIn", bounce: 0.5 }}
+      transition={{ duration: 0.5, ease: "easeIn", bounce: 0.2 }}
     >
       <div id="project" className=" max-w-screen-2xl mx-auto space-y-8">
         <p className="text-center text-3xl tracking-widest">

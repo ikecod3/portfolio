@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex flex-col items-center justify-center mx-auto h-[100vh] mt-16  sm:mt-0"
+      className="flex flex-col items-center justify-center mx-auto h-[100vh] mt-16"
     >
       <p className="text-center text-3xl border-blue-400 border-b-2 tracking-widest">
         About
