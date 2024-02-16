@@ -7,6 +7,7 @@ import {
   Services,
   Work,
   Contact,
+  Footer,
 } from "./components";
 import { FloatButton } from "antd";
 import {
@@ -44,6 +45,7 @@ const App = () => {
       <Services />
       <Work />
       <Contact />
+      <Footer />
 
       <div className="p-4 block sm:hidden z-30">
         <FloatButton.Group

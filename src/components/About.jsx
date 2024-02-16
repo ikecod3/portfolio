@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex flex-col items-center justify-center mx-auto h-[100vh] mt-16"
+      className="flex flex-col items-center justify-center mx-auto h-[100vh] sm:h-[60vh] mt-16"
     >
       <p className="text-center text-3xl border-blue-400 border-b-2 tracking-widest">
         About
@@ -58,7 +58,6 @@ const About = () => {
           <h1 className="p-8 font-bold text-4xl">Experience</h1>
           <Timeline
             className="text-inherit"
-            reverse={true}
             items={[
               {
                 children: (
@@ -75,6 +74,15 @@ const About = () => {
                 children: (
                   <>
                     <p className="text-lg sm:text-2xl">
+                      Full Stack JS Developer - GoMyCode BootCamp
+                    </p>
+                  </>
+                ),
+              },
+              {
+                children: (
+                  <>
+                    <p className="text-lg sm:text-2xl">
                       Remote Consultant - League of Statistician
                     </p>
                   </>
@@ -85,15 +93,6 @@ const About = () => {
                   <>
                     <p className="text-lg sm:text-2xl">
                       FreeLance - Web Developer
-                    </p>
-                  </>
-                ),
-              },
-              {
-                children: (
-                  <>
-                    <p className="text-lg sm:text-2xl">
-                      Full Stack Developer - GoMyCode BootCamp
                     </p>
                   </>
                 ),

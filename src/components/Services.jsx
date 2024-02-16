@@ -2,8 +2,11 @@
 
 const Services = () => {
   return (
-    <div id="services" className="h-[70vh] flex items-center justify-center">
-      <p className="text-center mx-auto max-w-screen-lg text-sm sm:text-2xl text-pretty px-4 sm:px-0">
+    <div
+      id="services"
+      className="h-[40vh] flex flex-col  items-center justify-center p-8 mb-12 bg-slate-50"
+    >
+      <p className="text-center mx-auto max-w-screen-lg text-base sm:text-xl text-pretty px-4 sm:px-0">
         <i className="tracking-wider">
           From dissecting data to weaving web wonders, my journey echoes
           versatility. <br /> As a full-stack web developer, I blend analytical
