@@ -17,6 +17,8 @@ app.use(express.urlencoded({ extended: true }));
 
 // Configure CORS
 app.use(cors());
+// Add options route to handle preflight requests
+app.options("/api/send-email", cors());
 
 app.post("/api/send-email", workWithMe);
 

@@ -34,8 +34,6 @@ export const workWithMe = async (req, res) => {
       html: emailBody,
     });
 
-    // Log success message
-    console.log("Your email was successfully sent");
     return res
       .status(200)
       .json({ message: "Your email was successfully sent" });
