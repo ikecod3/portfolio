@@ -95,7 +95,6 @@ const Contact = () => {
               ></textarea>
 
               <button
-                type="submit"
                 className="border-2 p-2 sm:text-xl rounded-xl w-auto max-w-24
              sm:max-w-40 text-center flex items-center justify-center gap-2"
               >
