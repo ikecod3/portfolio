@@ -45,7 +45,7 @@ const Header = () => {
                   <a
                     href="#"
                     download="okoye's cv"
-                    className="flex items-center justify-center gap-4 text-inherit text-base font-extrabold border-2 py-2 text-center sm:text-left p-[0.48rem] rounded-xl hover:animate-pulse"
+                    className="flex items-center justify-center gap-4 text-inherit text-base font-extrabold border-2 py-2 text-center sm:text-left p-[0.48rem] rounded-xl hover:animate-pulse min-w-max"
                   >
                     Download CV <BsDownload />
                   </a>
@@ -55,7 +55,7 @@ const Header = () => {
                   className=" hover:font-bold hover:text-white"
                 >
                   <button
-                    className="flex items-center justify-center p-1.5 px-6 border-2 py-2 bg-transparent border-lime-500 shadow-lg rounded-xl text-base hover:bg-[#2d82f8] hover:border-0 transition-all"
+                    className="flex items-center justify-center p-1.5 px-6 border-2 py-2 bg-transparent border-lime-500 shadow-lg rounded-xl text-base hover:bg-[#2d82f8] hover:border-0 transition-all min-w-max"
                     type="button"
                   >
                     Hire Me

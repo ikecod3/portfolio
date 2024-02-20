@@ -59,7 +59,7 @@ const Contact = () => {
             {/* <p className="text-xl sm:text-2xl py-4"> Let's chat</p> */}
 
             <p
-              className=" text-center flex justify-center items-center gap-4 text-lg bg-lime-200 rounded-lg font-medium sm:text-xl xl:text-2xl w-auto mx-auto p-4 cursor-pointer text-rose-600"
+              className=" text-center flex justify-center items-center gap-4 text-lg bg-lime-200 rounded-lg font-medium sm:text-xl xl:text-2xl w-auto mx-auto p-4 cursor-pointer text-rose-600 min-w-max"
               onClick={handleWhatsAppChat}
             >
               <BiLogoWhatsapp size={35} /> +234 706 883 6917
