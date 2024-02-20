@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="h-[50vh]  flex flex-col  items-center justify-center p-8 mb-12 bg-gradient-to-l text-blue-600"
+      className="h-[50vh]  flex flex-col  items-center justify-center p-8 mb-12 bg-gradient-to-l text-[#6495ed]"
     >
       <p className="text-center mx-auto max-w-screen-lg text-base sm:text-xl text-pretty px-4 sm:px-0 ">
         <i className="tracking-wider text-inherit">
