@@ -43,7 +43,7 @@ const Header = () => {
               <section className="flex gap-x-8 items-center justify-start pb-4 mt-5">
                 <div>
                   <a
-                    href="Ikechukwu Okoye_Credentials.pdf"
+                    href="#"
                     download="okoye's cv"
                     className="flex items-center justify-center gap-4 text-inherit text-base font-extrabold border-2 py-2 text-center sm:text-left p-[0.48rem] rounded-xl hover:animate-pulse"
                   >
