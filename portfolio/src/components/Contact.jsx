@@ -29,7 +29,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Fetch the form data
-    setLoading(true); // Set loading state to true
+    setLoading(true);
 
     try {
       const response = await axios.post(`${VITE_START_POINT}/api/send-email`, {
@@ -41,11 +41,12 @@ const Contact = () => {
         setSenderEmail("");
         setEmailBody("");
         toast.success("Email sent successfully");
-        setLoading(false);
+        setLoading(true);
       } else {
         toast.error("Failed to send email");
         console.error("Failed to send email.");
       }
+      setLoading(false);
     } catch (error) {
       console.error("An error occurred:", error);
     }
