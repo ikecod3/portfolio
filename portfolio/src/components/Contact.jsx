@@ -9,7 +9,8 @@ import axios from "axios";
 const Contact = () => {
   const [senderEmail, setSenderEmail] = useState("");
   const [emailBody, setEmailBody] = useState("");
-  const [loading, setLoading] = useState(false); // State to track loading status
+  // State to track loading status
+  const [loading, setLoading] = useState(false);
 
   const VITE_START_POINT = import.meta.env.VITE_START_POINT;
 
