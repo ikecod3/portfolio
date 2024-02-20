@@ -47,16 +47,16 @@ const App = () => {
       <Contact />
       <Footer />
 
-      <div className="p-4 block sm:hidden z-30">
+      <div className="p-4 flex sm:hidden z-30 -mb-36">
         <FloatButton.Group
-          className="z-30"
+          className="-mb-20"
           trigger="click"
           type="default"
           shape="square"
           description="Menu"
           style={{
             right: -35,
-            padding: "130px",
+            padding: "0px 123px 166px 0px",
           }}
           icon={<AppstoreOutlined />}
         >
