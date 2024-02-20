@@ -29,7 +29,7 @@ const Contact = () => {
     // Fetch the form data
 
     try {
-      const response = await axios.post(`${VITE_START_POINT}/send-email`, {
+      const response = await axios.post(`${VITE_START_POINT}/api/send-email`, {
         senderEmail,
         emailBody,
       });
