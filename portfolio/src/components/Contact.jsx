@@ -9,6 +9,7 @@ import axios from "axios";
 const Contact = () => {
   const [senderEmail, setSenderEmail] = useState("");
   const [emailBody, setEmailBody] = useState("");
+  const [loading, setLoading] = useState(false); // State to track loading status
 
   const VITE_START_POINT = import.meta.env.VITE_START_POINT;
 
@@ -27,6 +28,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Fetch the form data
+    setLoading(true); // Set loading state to true
 
     try {
       const response = await axios.post(`${VITE_START_POINT}/api/send-email`, {
@@ -38,6 +40,7 @@ const Contact = () => {
         setSenderEmail("");
         setEmailBody("");
         toast.success("Email sent successfully");
+        setLoading(false);
       } else {
         toast.error("Failed to send email");
         console.error("Failed to send email.");
@@ -97,8 +100,9 @@ const Contact = () => {
               <button
                 className="border-2 p-2 sm:text-xl rounded-xl w-auto max-w-24
              sm:max-w-40 text-center flex items-center justify-center gap-2"
+                disabled={loading}
               >
-                Send
+                {loading ? "Sending..." : "Send"}
                 <FaMailBulk />
               </button>
             </form>
